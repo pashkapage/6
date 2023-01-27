@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'walkwayblack';
+    src: url('../fonts/walkwayblack.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$color-basic1: #0199e6;
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    img {
+        width: 100%;
+    }
+}
+
+.header {
+    position: relative;
+
+    .header__text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+
+        .social {
+            display: flex;
+            flex-direction: row;
+
+            .social__logo {
+                font-family: 'walkwayblack';
+                font-size: 36px;
+
+                p {
+                    color: white;
+                }
+
+                span {
+                    color: $color-basic1;
+                }
+            }
+
+            .social__wide {}
+        }
+    }
+}
