@@ -144,3 +144,48 @@ body {
         }
     }
 }
+.brif{
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+    gap:40px;
+    .brif__item{
+        /* width: 50%; */
+        .caption{
+            font-family: $font-Raleway;
+            color: black;
+            &::after{
+                display: block;
+                content: '';
+                width: 75px;
+                border-bottom: 1px solid $color-basic1;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        .discription{
+            font-family: $font-SourceSansPro;
+            color: grey;
+            margin-bottom: 20px;
+            
+        }
+    }
+}
+.features{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    .block{
+        
+        .block__caption{
+            font-family: $font-Raleway;
+            color: black;
+            margin-bottom: 10px;
+        }
+        .block__discription{
+            font-family: $font-SourceSansPro;
+            color: grey;
+            margin-bottom: 20px;
+        }
+    }
+}

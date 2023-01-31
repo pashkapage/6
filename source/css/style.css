@@ -131,4 +131,47 @@ body img {
   height: 26px;
   margin-left: 5px;
   margin-bottom: 5px;
+}
+
+.brif {
+  display: flex;
+  flex-direction: row;
+  margin: 100px;
+  gap: 40px;
+}
+.brif .brif__item {
+  /* width: 50%; */
+}
+.brif .brif__item .caption {
+  font-family: "Raleway", sans-serif;
+  color: black;
+}
+.brif .brif__item .caption::after {
+  display: block;
+  content: "";
+  width: 75px;
+  border-bottom: 1px solid #0199e6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.brif .brif__item .discription {
+  font-family: "Source Sans Pro", sans-serif;
+  color: grey;
+  margin-bottom: 20px;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.features .block .block__caption {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  margin-bottom: 10px;
+}
+.features .block .block__discription {
+  font-family: "Source Sans Pro", sans-serif;
+  color: grey;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
