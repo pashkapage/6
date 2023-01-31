@@ -136,8 +136,13 @@ body img {
 .brif {
   display: flex;
   flex-direction: row;
-  margin: 100px;
+  padding: 100px;
   gap: 40px;
+  background-color: white;
+}
+.brif--modify {
+  background-color: #f7f8fa;
+  flex-direction: row-reverse;
 }
 .brif .brif__item {
   /* width: 50%; */
