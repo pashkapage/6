@@ -179,4 +179,51 @@ body img {
   font-family: "Source Sans Pro", sans-serif;
   color: grey;
   margin-bottom: 20px;
+}
+
+.our-feachers {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+}
+.our-feachers .our-feachers__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-feachers .our-feachers__item--modify {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+.our-feachers .our-feachers__item .title {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  margin-bottom: 15px;
+}
+.our-feachers .our-feachers__item .line {
+  width: 75px;
+  border-bottom: 1px solid #0199e6;
+  margin-bottom: 15px;
+}
+.our-feachers .our-feachers__item .specification {
+  font-family: "Source Sans Pro", sans-serif;
+  color: grey;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.cards .cards__title {
+  font-family: "Raleway", sans-serif;
+  color: black;
+}
+.cards .cards__definition {
+  font-family: "Source Sans Pro", sans-serif;
+  color: grey;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
