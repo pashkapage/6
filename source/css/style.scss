@@ -271,3 +271,42 @@ body {
         text-align: center;
     }
 }
+
+.pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f8fa;
+    .pricing__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+        .line{
+            width: 100px;
+            height: 1px;
+            border-bottom: 1px solid $color-basic1;
+        }
+        .caption{
+            font-family: $font-Raleway;
+            color: black;
+        }
+        .discription{
+            font-family: $font-SourceSansPro;
+            color: grey;
+        }
+        &--row{
+            flex-direction: row;
+        }
+    }
+}
+
+.pricing-table{
+    img{
+        width: 26px;
+        height: 26px;
+    }
+    tbody{
+        
+    }
+}

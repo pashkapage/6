@@ -226,4 +226,38 @@ body img {
   font-family: "Source Sans Pro", sans-serif;
   color: grey;
   text-align: center;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f8fa;
+}
+.pricing .pricing__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.pricing .pricing__item .line {
+  width: 100px;
+  height: 1px;
+  border-bottom: 1px solid #0199e6;
+}
+.pricing .pricing__item .caption {
+  font-family: "Raleway", sans-serif;
+  color: black;
+}
+.pricing .pricing__item .discription {
+  font-family: "Source Sans Pro", sans-serif;
+  color: grey;
+}
+.pricing .pricing__item--row {
+  flex-direction: row;
+}
+
+.pricing-table img {
+  width: 26px;
+  height: 26px;
 }/*# sourceMappingURL=style.css.map */
