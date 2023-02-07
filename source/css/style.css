@@ -233,12 +233,14 @@ body img {
   flex-direction: column;
   align-items: center;
   background-color: #f7f8fa;
+  margin-bottom: 70px;
 }
 .pricing .pricing__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  margin-top: 70px;
 }
 .pricing .pricing__item .line {
   width: 100px;
@@ -257,7 +259,64 @@ body img {
   flex-direction: row;
 }
 
+.pricing-table {
+  border: 1px solid #e5e5e5;
+}
 .pricing-table img {
-  width: 26px;
-  height: 26px;
+  width: 10px;
+  height: 10px;
+}
+.pricing-table .pricing-table__head {
+  background-color: #323232;
+  color: white;
+}
+.pricing-table .pricing-table__head--bgcolor {
+  background-color: #0199e6;
+}
+.pricing-table .pricing-table__head th {
+  padding: 20px;
+}
+.pricing-table .pricing-table__head h3 {
+  font-family: "Raleway", sans-serif;
+}
+.pricing-table .pricing-table__head p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+}
+.pricing-table .pricing-table__head .span {
+  color: #0199e6;
+  font-weight: 600;
+}
+.pricing-table .pricing-table__head .span--color {
+  color: white;
+}
+.pricing-table tbody td {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #323232;
+  padding: 10px 20px 10px 20px;
+  border-bottom: 1px dashed #e5e5e5;
+}
+.pricing-table tbody .last-td {
+  color: black;
+  font-weight: 600;
+  padding: 20px;
+}
+.pricing-table tbody .rigth {
+  text-align: right;
+}
+.pricing-table tbody .rigth--bgcolor {
+  background-color: #0199e6;
+}
+.pricing-table tbody .link {
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #727272;
+  border-radius: 5px;
+  color: #727272;
+  text-decoration: none;
+  font-weight: 600;
+}
+.pricing-table tbody .link--color {
+  background-color: #0199e6;
+  border: none;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
