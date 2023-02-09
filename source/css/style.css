@@ -233,7 +233,7 @@ body img {
   flex-direction: column;
   align-items: center;
   background-color: #f7f8fa;
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 .pricing .pricing__item {
   display: flex;
@@ -319,4 +319,45 @@ body img {
   background-color: #0199e6;
   border: none;
   color: white;
+}
+
+.watch-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-bottom: 70px;
+}
+.watch-video .watch-video__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 70px;
+}
+.watch-video .watch-video__item .line {
+  width: 100px;
+  height: 1px;
+  border-bottom: 1px solid #0199e6;
+}
+.watch-video .watch-video__item .caption {
+  font-family: "Raleway", sans-serif;
+  color: black;
+}
+.watch-video .watch-video__item .discription, .watch-video .watch-video__item .text-plus {
+  font-family: "Source Sans Pro", sans-serif;
+  color: grey;
+}
+.watch-video .watch-video__item .text-plus {
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  font-weight: 600;
+}
+.watch-video .watch-video__item .image {
+  max-width: 75%;
+}
+.watch-video .watch-video__item--row {
+  flex-direction: row;
+  width: 55%;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
