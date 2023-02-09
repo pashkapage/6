@@ -389,7 +389,7 @@ body {
             font-family: $font-Raleway;
             color: black;
         }
-        .discription, .text-plus{
+        .discription{
             font-family: $font-SourceSansPro;
             color: grey;
         }
@@ -404,6 +404,46 @@ body {
         &--row{
             flex-direction: row;
             width: 55%;
+            justify-content: space-between;
+        }
+    }
+}
+
+.product-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f8fa;
+    padding-bottom:70px;
+    .product-screen__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+        margin-top:70px;
+        .line{
+            width: 100px;
+            height: 1px;
+            border-bottom: 1px solid $color-basic1;
+        }
+        .caption{
+            font-family: $font-Raleway;
+            color: black;
+        }
+        .discription, .text-plus{
+            font-family: $font-SourceSansPro;
+            color: grey;
+        }
+        .text-plus{
+            font-family: $font-SourceSansPro;
+            color: black;
+            font-weight: 600;
+        }
+        .image{
+            
+        }
+        &--row{
+            flex-direction: row;
             justify-content: space-between;
         }
     }
