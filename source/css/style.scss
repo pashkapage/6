@@ -593,3 +593,37 @@ body {
         font-weight: normal;
     }
 }
+
+.registration{
+    display: flex;
+    flex-direction: column;
+    .registration__img{
+        position: relative;
+        .image{
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+    }
+    .registration__text{
+        z-index: 2;
+        color: white;
+        font-family: $font-Raleway;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        height: 316px;
+        
+        .link{
+            width: max-content;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            background-color: $color-basic1;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+    }
+}

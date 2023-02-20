@@ -502,4 +502,38 @@ body img {
   color: grey;
   display: block;
   font-weight: normal;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+}
+.registration .registration__img {
+  position: relative;
+}
+.registration .registration__img .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.registration .registration__text {
+  z-index: 2;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  height: 316px;
+}
+.registration .registration__text .link {
+  width: -moz-max-content;
+  width: max-content;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #0199e6;
+  border-radius: 5px;
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */
