@@ -586,6 +586,7 @@ body img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 5px;
 }
 .footer .copyright .copyright__icon a {
   display: block;
