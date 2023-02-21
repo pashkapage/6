@@ -627,3 +627,59 @@ body {
         }
     }
 }
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    .contact-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+        background-color: white;
+        font-family: $font-SourceSansPro;
+        font-weight: 600;
+        height: 100px;
+        p{
+            margin: 0;
+        }
+        .contact-us__mail{
+            color: $color-basic1;
+            text-decoration: none;
+            font-size: 13px;
+        }
+    }
+    .copyright{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f7f8fa;
+        height: 150px;
+        .copyright__logo{
+            font-family: 'walkwayblack';
+            font-size: 20px;
+            span{
+                color: $color-basic1;
+            }
+        }
+        .copyright__allright{
+            color:#919191;
+            font-family: $font-SourceSansPro;
+            font-size: 14px;
+        }
+        .copyright__icon{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            a {
+                display: block;
+                svg{
+                    display: inherit;
+                }
+            }
+        }
+    }
+}
