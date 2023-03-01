@@ -48,12 +48,13 @@ body {
             margin-top: 45px;
 
             .social__logo {
+                display: block;
                 font-family: 'walkwayblack';
                 font-size: 36px;
-
+                margin-left: 100px;
                 p {
                     color: white;
-                    margin-left: 100px;
+                    
                 }
 
                 span {
@@ -62,7 +63,80 @@ body {
             }
 
             .social__wide {
+                display: block;
                 margin-right: 100px;
+
+            }
+
+            .nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                position: fixed;
+                /* -webkit-transition: bottom .2s ease-out 0s;
+                -moz-transition: bottom .2s ease-out 0s;
+                -o-transition: bottom .2s ease-out 0s;
+                transition: bottom .2s ease-out 0s; */
+                transition: 1s;
+                background-color: white;
+                z-index: 5;
+                .nav__logo {
+                    font-family: 'walkwayblack';
+                    font-size: 36px;
+                    margin-left: 100px;
+                    p {
+                        color: grey;
+                        
+                    }
+
+                    span {
+                        color: $color-basic1;
+                    }
+                }
+
+                .menu {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 30px;
+                    margin-right: 100px;
+                    a {
+                        text-decoration: none;
+                        color: #919191;
+
+                        &:hover {
+                            color: $color-basic1;
+
+                            & a::after {
+                                content: "";
+                                width: 20px;
+                                height: 1px;
+                                border-bottom: 1px solid $color-basic1;
+                            }
+                        }
+
+                        &:active {
+                            color: $color-basic1;
+                        }
+                    }
+
+                    li {
+                        font-family: $font-Raleway;
+                        font-weight: 600;
+                        list-style-type: none;
+                    }
+                }
+
+                .nav-top {
+                    top: 0;
+                }
+
+                .nav-bottom {
+                    top: -75px;
+                }
             }
         }
 
@@ -515,9 +589,10 @@ body {
 
         &--row {
             flex-direction: row;
-            justify-content: space-between;   
+            justify-content: space-between;
         }
-        &--width{
+
+        &--width {
             width: 80%;
         }
     }
@@ -528,7 +603,8 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    &::before{
+
+    &::before {
         content: "\“ ";
         background-color: $color-basic1;
         color: white;
@@ -543,6 +619,7 @@ body {
         position: absolute;
         z-index: 2;
     }
+
     .quote__quote {
         width: 80%;
         background-color: #f7f8fa;
@@ -553,9 +630,10 @@ body {
         text-align: center;
         color: grey;
         padding: 50px 20px 20px 20px;
-        border-bottom: 2px solid #e9ebed; 
+        border-bottom: 2px solid #e9ebed;
         position: relative;
         margin-top: 20px;
+
         &::after,
         &::before {
             top: 100%;
@@ -579,7 +657,8 @@ body {
             margin-left: -17px;
         }
     }
-    .quote__author{
+
+    .quote__author {
         color: $color-basic1;
         font-style: normal;
         font-family: $font-SourceSansPro;
@@ -587,25 +666,29 @@ body {
         font-weight: 600;
         padding-top: 25px;
     }
-    .quote__source{
-        color:grey;
+
+    .quote__source {
+        color: grey;
         display: block;
         font-weight: normal;
     }
 }
 
-.registration{
+.registration {
     display: flex;
     flex-direction: column;
-    .registration__img{
+
+    .registration__img {
         position: relative;
-        .image{
+
+        .image {
             position: absolute;
-            top:0;
+            top: 0;
             left: 0;
         }
     }
-    .registration__text{
+
+    .registration__text {
         z-index: 2;
         color: white;
         font-family: $font-Raleway;
@@ -615,8 +698,8 @@ body {
         justify-content: center;
         gap: 25px;
         height: 316px;
-        
-        .link{
+
+        .link {
             width: max-content;
             color: white;
             text-decoration: none;
@@ -628,56 +711,66 @@ body {
     }
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
-    .contact-us{
+
+    .contact-us {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap:10px;
+        gap: 10px;
         background-color: white;
         font-family: $font-SourceSansPro;
         font-weight: 600;
         height: 100px;
-        p{
+
+        p {
             margin: 0;
         }
-        .contact-us__mail{
+
+        .contact-us__mail {
             color: $color-basic1;
             text-decoration: none;
             font-size: 13px;
         }
     }
-    .copyright{
+
+    .copyright {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: #f7f8fa;
         height: 150px;
-        .copyright__logo{
+
+        .copyright__logo {
             font-family: 'walkwayblack';
             font-size: 20px;
-            span{
+
+            span {
                 color: $color-basic1;
             }
         }
-        .copyright__allright{
-            color:#919191;
+
+        .copyright__allright {
+            color: #919191;
             font-family: $font-SourceSansPro;
             font-size: 14px;
         }
-        .copyright__icon{
+
+        .copyright__icon {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            gap:5px;
+            gap: 5px;
+
             a {
                 display: block;
-                svg{
+
+                svg {
                     display: inherit;
                 }
             }
