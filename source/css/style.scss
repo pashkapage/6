@@ -76,6 +76,7 @@ body {
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
+                height: 75px;
                 position: fixed;
                 /* -webkit-transition: bottom .2s ease-out 0s;
                 -moz-transition: bottom .2s ease-out 0s;
@@ -110,13 +111,21 @@ body {
                         text-decoration: none;
                         color: #919191;
 
+                        li {
+                            position: relative;
+                        }
+
                         &:hover {
                             color: $color-basic1;
 
-                            & a::after {
+                            & li::after {
                                 content: "";
-                                width: 20px;
+                                position: absolute;
+                                width: 50px;
                                 height: 1px;
+                                bottom: -13px;
+                                left:50%;
+                                transform:translate(-50%, -50%);
                                 border-bottom: 1px solid $color-basic1;
                             }
                         }
@@ -131,14 +140,6 @@ body {
                         font-weight: 600;
                         list-style-type: none;
                     }
-                }
-
-                .nav-top {
-                    top: 0;
-                }
-
-                .nav-bottom {
-                    top: -75px;
                 }
             }
         }
