@@ -16,15 +16,17 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  max-width: 1366px;
+  margin: 0 auto;
+  background-color: #323232;
+}
 body img {
   width: 100%;
 }
 
 .header {
   position: relative;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
 }
 .header .header__text {
   position: absolute;
@@ -32,6 +34,7 @@ body img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .header .header__text .social {
   width: 100%;
@@ -64,12 +67,8 @@ body img {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 75px;
+  height: 60px;
   position: fixed;
-  /* -webkit-transition: bottom .2s ease-out 0s;
-  -moz-transition: bottom .2s ease-out 0s;
-  -o-transition: bottom .2s ease-out 0s;
-  transition: bottom .2s ease-out 0s; */
   top: -100px;
   transition: 0.5s;
   background-color: white;
@@ -254,6 +253,7 @@ body img {
   display: flex;
   flex-direction: column;
   padding: 100px;
+  background-color: white;
 }
 .our-feachers .our-feachers__item {
   display: flex;
@@ -290,6 +290,7 @@ body img {
 .cards .cards__title {
   font-family: "Raleway", sans-serif;
   color: black;
+  text-align: center;
 }
 .cards .cards__definition {
   font-family: "Source Sans Pro", sans-serif;
@@ -383,6 +384,7 @@ body img {
   color: #727272;
   text-decoration: none;
   font-weight: 600;
+  display: block;
 }
 .pricing-table tbody .link--color {
   background-color: #0199e6;
@@ -661,4 +663,10 @@ body img {
 }
 .footer .copyright .copyright__icon a svg {
   display: inherit;
+}
+
+@media (min-width: 1367px) {
+  .header .header__text .social .nav {
+    width: 1366px;
+  }
 }/*# sourceMappingURL=style.css.map */
