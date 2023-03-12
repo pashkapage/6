@@ -792,7 +792,7 @@ body img {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    left: 0;
+    left: -100%;
     width: 100%;
     background-color: white;
     visibility: hidden;
@@ -835,6 +835,9 @@ body img {
   .header .header__text .nav #burger__toogle:checked ~ .menu {
     visibility: visible;
     left: 0;
+  }
+  .header .header__text .nav .menu {
+    transition-duration: 0.25s;
   }
 }
 @media (max-width: 740px) {
