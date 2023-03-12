@@ -88,6 +88,10 @@ body {
             background-color: white;
             z-index: 5;
 
+            #burger__toogle {
+                display: none;
+            }
+
             .burger {
                 display: none;
             }
@@ -927,6 +931,7 @@ body {
     .header .header__text .nav {
         justify-content: center;
 
+
         .nav__logo {
             align-self: center;
             margin: 0;
@@ -934,31 +939,30 @@ body {
         }
 
         .menu {
-            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            visibility: hidden;
+            transition: 0.5s;
         }
 
         .burger {
-            display: block;
+            display: flex;
+            flex-direction: column;
             margin-left: 5.12vw;
-            &:active{
-                .burger__line{
-                    transform: rotate(0.1turn);
-                }
-                &::before,&::after{
-                    transform: translate(0, 220%) rotate(-0.1turn);
-                }
-                &::after{
-                    transform: translate(0, -220%) rotate(-0.1turn);
-                }
-            }
-            .burger__line{
+
+            .burger__line {
                 width: 30px;
                 height: 2px;
                 border-bottom: 2px solid gray;
                 transition: 0.3s;
             }
 
-            &::before, &::after {
+            &::before,
+            &::after {
                 content: '';
                 display: block;
                 width: 30px;
@@ -966,13 +970,34 @@ body {
                 border-bottom: 2px solid gray;
                 transition: 0.3s;
             }
-            &::before{
+
+            &::before {
                 margin-bottom: 5px;
             }
-            &::after{
+
+            &::after {
                 margin-top: 5px;
             }
         }
+        #burger__toogle:checked  ~ .burger > .burger__line   {
+            transform: rotate(0.1turn);
+        }
+        #burger__toogle:checked ~ .burger::before{
+            transform: translate(0, 220%) rotate(-0.1turn);
+        }
+        #burger__toogle:checked ~ .burger::after {
+            transform: translate(0, -220%) rotate(-0.1turn);
+        }
+        #burger__toogle:checked ~ .menu {
+            visibility: visible;
+            left:0;
+        } 
+        .menu{
+           
+            
+            //transition-duration: .25s;
+        }
+        
     }
 }
 
