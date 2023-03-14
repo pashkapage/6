@@ -930,6 +930,7 @@ body {
 
     .header .header__text .nav {
         justify-content: center;
+        
 
 
         .nav__logo {
@@ -944,9 +945,11 @@ body {
             top: 60px;
             left: -100%;
             width: 100%;
-            background-color: white;
+            height: 100vh;
+            background-color: rgb(243, 241, 241);
             visibility: hidden;
-            transition: 0.5s;
+            //transition: 0.5s;
+            z-index: 4;
         }
 
         .burger {
@@ -994,6 +997,11 @@ body {
         } 
         .menu{
             transition-duration: .25s;
+            gap:25px;
+            justify-content: flex-start;
+            > a:first-of-type{
+                margin-top: 25px;
+            }
         }
         
     }

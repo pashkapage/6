@@ -794,9 +794,10 @@ body img {
     top: 60px;
     left: -100%;
     width: 100%;
-    background-color: white;
+    height: 100vh;
+    background-color: rgb(243, 241, 241);
     visibility: hidden;
-    transition: 0.5s;
+    z-index: 4;
   }
   .header .header__text .nav .burger {
     display: flex;
@@ -838,6 +839,11 @@ body img {
   }
   .header .header__text .nav .menu {
     transition-duration: 0.25s;
+    gap: 25px;
+    justify-content: flex-start;
+  }
+  .header .header__text .nav .menu > a:first-of-type {
+    margin-top: 25px;
   }
 }
 @media (max-width: 740px) {

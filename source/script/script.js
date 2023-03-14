@@ -15,3 +15,14 @@ window.onscroll = function() {
     social__wide[0].style.display = "block";
   }
 }
+
+const checkbox = document.querySelector("input");
+let menu = document.querySelector(".menu");
+
+checkbox.addEventListener("change", function () {
+    if (this.checked) {
+        console.log("checked");
+    } else {
+        console.log("unchecked");
+    }
+})
