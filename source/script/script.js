@@ -1,6 +1,10 @@
 var nav = document.getElementsByClassName("nav");
 var social__logo = document.getElementsByClassName("social__logo");
 var social__wide = document.getElementsByClassName("social__wide");
+const checkbox = document.querySelector("input");
+let menu = document.querySelector(".menu");
+let links = document.querySelectorAll(".menu > a");
+let burger__toogle = document.querySelector("#burger__toogle");
 
 window.onscroll = function() {
   var scrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -16,13 +20,14 @@ window.onscroll = function() {
   }
 }
 
-const checkbox = document.querySelector("input");
-let menu = document.querySelector(".menu");
-
 checkbox.addEventListener("change", function () {
     if (this.checked) {
-        console.log("checked");
-    } else {
-        console.log("unchecked");
-    }
+        links.forEach(element => {
+          element.onclick = function(){
+            menu.style.left = "-100%";
+            menu.style.left="";
+            burger__toogle.checked = false;
+          }
+        });
+    } 
 })
